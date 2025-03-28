@@ -59,14 +59,14 @@ A API permite:
 <h4>Estrutura do Projeto</h4>
 
 <ul>
-    <li> `app/Http/Controllers/AdminUserController.php`: Responsável por validar e cadastrar um usuário administrador</li>
-    <li> `app/Http/Controllers/AuthController.php`: Responsável por autenticar o usuário administrador</li>
-    <li> `app/Http/Controllers/UploadController.php`: Responsável pelo upload dos arquivos CSV</li>
-    <li> `app/Jobs/ProcessCsvImport.php`: Job que processa a importação assíncrona dos dados</li>
-    <li> `app/Services/CsvValidationService.php`: Serviço para validação das entradas CSV<li>
-    <li> `app/Models/ImportStatus.php`: Modelo para acompanhamento do status da importação
-    <li> `app/Models/User.php`: Modelo para os usuários importados</li>
-    <li> `app/Models/ApiLog.php`: Modelo para registrar os logs das ações feitas nos principais endpoints</li>
+    <li>app/Http/Controllers/AdminUserController.php: Responsável por validar e cadastrar um usuário administrador</li>
+    <li>app/Http/Controllers/AuthController.php: Responsável por autenticar o usuário administrador</li>
+    <li>app/Http/Controllers/UploadController.php: Responsável pelo upload dos arquivos CSV</li>
+    <li>app/Jobs/ProcessCsvImport.php: Job que processa a importação assíncrona dos dados</li>
+    <li>app/Services/CsvValidationService.php: Serviço para validação das entradas CSV<li>
+    <li>app/Models/ImportStatus.php: Modelo para acompanhamento do status da importação
+    <li>app/Models/User.php: Modelo para os usuários importados</li>
+    <li>app/Models/ApiLog.php: Modelo para registrar os logs das ações feitas nos principais endpoints</li>
 </ul>
 
 <h4>Uso</h4>
@@ -76,9 +76,8 @@ A API permite:
       <li>Efetuar login na aplicação (POST /login)
       </li>
       <li>Importar usuários: (POST /upload)
-            -inicie o serviço de filas para criação e disparo do job de importação
-            <p>docker exec -it async-csv-import-app php artisan queue:work --daemon</p>
-            -utilizar o arquivo test.csv ou algum outro arquivo seguindo a mesma estrutura e extensão
+            <p>inicie o serviço de filas para criação e disparo do job de importação: docker exec -it async-csv-import-app php artisan queue:work --daemon</p>
+            <p>utilizar o arquivo test.csv ou algum outro arquivo seguindo a mesma estrutura e extensão</p>
       </li>
       <li>Obter usuários cadastrados (GET /users)
       </li>
