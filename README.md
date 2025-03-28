@@ -47,13 +47,13 @@ A API permite:
             <p>php artisan storage:link</p>
       </li>
       <li>6. Verifique se todos os serviços estão rodando
-            docker compose ps
+            <p>docker compose ps</p>
       </li>
       <li>7. Deve haver quatro containers rodando
-            - async-csv-import-app
-            - async-csv-import-db
-            - async-csv-import-redis
-            - async-csv-import-queue
+           <p>async-csv-import-app</p>
+           <p>async-csv-import-db</p>
+           <p>async-csv-import-redis</p>
+           <p>async-csv-import-queue</p>
       </li>
    </ul>
 
@@ -64,8 +64,8 @@ A API permite:
     <li>app/Http/Controllers/AuthController.php: Responsável por autenticar o usuário administrador</li>
     <li>app/Http/Controllers/UploadController.php: Responsável pelo upload dos arquivos CSV</li>
     <li>app/Jobs/ProcessCsvImport.php: Job que processa a importação assíncrona dos dados</li>
-    <li>app/Services/CsvValidationService.php: Serviço para validação das entradas CSV<li>
-    <li>app/Models/ImportStatus.php: Modelo para acompanhamento do status da importação
+    <li>app/Services/CsvValidationService.php: Serviço para validação das entradas CSV</li>
+    <li>app/Models/ImportStatus.php: Modelo para acompanhamento do status da importação</li>
     <li>app/Models/User.php: Modelo para os usuários importados</li>
     <li>app/Models/ApiLog.php: Modelo para registrar os logs das ações feitas nos principais endpoints</li>
 </ul>
