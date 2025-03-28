@@ -14,6 +14,7 @@ A API permite:
        <li>Cadastrar de forma assíncrona usuários em uma base de dados MySQL</li>
        <li>Obter os usuários cadastrados por paginação</li>
        <li>Consultar o status de uma importação específica</li>
+       <li>Cadastrar logs das ações executadas nos principais endpoints</li>
     </ul>
 
 # Configuração e Utilização
